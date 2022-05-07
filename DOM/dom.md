@@ -35,3 +35,8 @@ window
 
     Como selecionar por marca (tagName)
     getElementsByTagName()
+
+
+
+
+    
