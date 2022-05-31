@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+</head>
+
+<body>
+    <h1>Voce esta vivendo</h1>
+    <input type="text" name="txt1" id="txt1">
+    <input type="button" value="exibir" onclick="exibir()">
+
+    <div id="lista"></div>
+
+    <script>
+
+        function exibir() {
+            var lista = window.document.getElementById('lista')
+            var txt1 = window.document.getElementById('txt1')
+            if (txt1.value == 'Brasil') {
+                lista.innerHTML = `Voce é brasileiro!`
+
+            } else {
+                lista.innerHTML = `Voce é estrangeiro!`
+            }
+        }
+
+    </script>
+</body>
+
+</html>

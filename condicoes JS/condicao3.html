@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>condicoes JS</title>
+</head>
+
+<body>
+    Velocidade do carro: <input type="number" name="txt1" id="txt1">Km/h
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+
+    <script>
+
+        function calcular() {
+            var txt1 = document.getElementById('txt1')
+            var vel = Number(txt1.value)
+            var res = document.getElementById('res')
+            res.innerHTML = `<p>Sua velocidade é de <strong>${vel} </strong>km/h</p>`
+            res.innerHTML += `<p>Dirija sempre com cinto de seguranca!</p>`
+
+            if (vel > 60) {
+                res.innerHTML += `Voce esta multado!!`
+            }
+        }
+    </script>
+</body>
+
+</html>
